@@ -1,0 +1,8 @@
+numpy
+matplotlib
+pandas
+pandas_datareader
+datetime
+sklearn.preprocessing
+tensorflow.keras.models
+tensorflow.keras.layers

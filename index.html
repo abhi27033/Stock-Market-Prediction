@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction</title>
+</head>
+
+<body>
+    <div class="col-md-4"><br>
+        <span>Please Choose Stock to Predict</span>
+        <select id="image-category">
+            <option value="AAPL">APPLE [AAPL]</option>
+            <option value="AMZN">AMAZON [AMZN]</option>
+            <option value="CSCO">CISCO [CSCO]</option>
+            <option value="GOOGL">GOOGLE [GOOGL]</option>
+            <option value="META">META [META]</option>
+            <option value="NFLX">NETFLIX [NFLX]</option>
+            <option value="NVDA">NVIDIA [NVDA]</option>
+            <option value="QCOM">QUALCOMM [QCOM]</option>
+        </select>
+        <button id = "btn">PREDICT</button>
+    </div>
+    <script type="text/javascript">
+        document.getElementById('btn').onclick = function () {
+           // btn.remove()
+           
+            const select = document.getElementById('image-category');
+            const option = select.options[select.selectedIndex];
+            console.warn(option.value)
+            const path = `Images/${option.value}.jpg`;
+            img = document.createElement('img');
+            img.src = path;
+            img.setAttribute('width', '500px');
+            img.setAttribute('height', '500px');
+            document.body.appendChild(img);
+           
+        }
+    </script>
+</body>
+
+</html>
