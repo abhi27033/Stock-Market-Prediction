@@ -1,7 +1,7 @@
 body{
     background: #1e0a23;
     min-height:100vh;
-    display:flex;
+    display:flexbox;
     justify-content:center;
     align-items:center;
     color:#fff;
